@@ -81,10 +81,12 @@ a {
 
 @media (min-width: 755px) {
   .container {
-    max-width: 755px; } }
+    max-width: 755px;
+    padding: 0 15px 0 20px; } }
 @media (min-width: 1170px) {
   .container {
-    max-width: 1170px; } }
+    max-width: 1170px;
+    padding: 0 15px; } }
 .title {
   margin: 0;
   color: #000000;
@@ -97,7 +99,8 @@ a {
 .title span {
   display: block;
   margin-bottom: 3px;
-  font-size: 18px; }
+  font-size: 18px;
+  letter-spacing: 0.9px; }
 
 @media (min-width: 755px) {
   .title {
@@ -220,7 +223,7 @@ a {
     width: 100%; }
 
   .page-header__left {
-    margin-left: 315px; }
+    margin-left: 311px; }
 
   .page-header__title {
     margin-bottom: 38px;
@@ -245,8 +248,9 @@ a {
     text-align: left; }
 
   .page-header__button {
-    padding: 19px 31px;
-    font-size: 14px; } }
+    padding: 19px 29px;
+    font-size: 14px;
+    margin-left: 2px; } }
 @media (min-width: 1170px) {
   .page-header {
     padding: 24px 0 186px 0;
@@ -288,10 +292,10 @@ a {
     font-size: inherit; } }
 .situation {
   position: relative;
-  padding: 87px 0 91px 0;
+  padding: 87px 0 97px 0;
   background-image: url("../img/bg-situation-mobile.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: 100% 100%; }
 
 .situation__title {
   position: relative;
@@ -351,7 +355,7 @@ a {
 
 @media (min-width: 755px) {
   .situation {
-    padding: 134px 0 185px  0;
+    padding: 134px 0 192px  0;
     background-image: url("../img/bg-situation-tablet.png");
     background-position: center 0; }
 
@@ -364,6 +368,9 @@ a {
   .situation__title::after {
     bottom: 36px;
     right: -51px; }
+
+  .situation__list {
+    text-align: left; }
 
   .situation__item {
     position: relative;
@@ -386,7 +393,7 @@ a {
     content: "";
     position: absolute;
     bottom: 72px;
-    left: 222px;
+    left: 218px;
     z-index: 2;
     width: 145px;
     height: 19px;
@@ -394,7 +401,7 @@ a {
 
   .situation__subtitle--1 {
     top: 65px;
-    left: 289px; }
+    left: 284px; }
 
   .situation__img--1 {
     width: 407px;
@@ -410,7 +417,7 @@ a {
 
   .situation__subtitle--2 {
     top: 49px;
-    left: 318px; }
+    left: 313px; }
 
   .situation__text--2 {
     width: 313px;
@@ -425,7 +432,7 @@ a {
 
   .situation__subtitle--3 {
     top: 160px;
-    left: 349px; }
+    left: 344px; }
 
   .situation__text--3 {
     width: 326px;
@@ -440,7 +447,7 @@ a {
 
   .situation__subtitle--4 {
     top: 41px;
-    left: 303px;
+    left: 299px;
     letter-spacing: 2.4px; }
 
   .situation__text--4 {
@@ -451,8 +458,7 @@ a {
     padding: 179px 0 230px 0;
     background-color: #fff;
     background-image: url(../img/bg-situation-desktop.png);
-    background-repeat: no-repeat;
-    background-size: cover; }
+    background-repeat: no-repeat; }
 
   .situation__title {
     width: 360px;
@@ -552,3 +558,286 @@ a {
   .situation__img--4 {
     width: 557px;
     height: 294px; } }
+.solution {
+  padding: 53px 0 76px 0; }
+
+.solution__title {
+  position: relative;
+  margin-bottom: 71px;
+  line-height: 30px; }
+
+.solution__title::after {
+  content: "";
+  position: absolute;
+  bottom: -18px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 64px;
+  height: 7px;
+  background-color: #f5112c; }
+
+.solution__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center; }
+
+.solution__item {
+  margin-bottom: 50px; }
+
+.solution__item:last-child {
+  margin-bottom: 0; }
+
+.solution__subtitle {
+  position: relative;
+  margin: 0 0 17px 0;
+  font-size: 14px;
+  font-weight: 800; }
+
+.solution__subtitle::after {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  border-radius: 23px;
+  background-color: #f5f5f5; }
+
+.solution__text {
+  width: 186px;
+  margin: 0 auto;
+  line-height: 18px; }
+
+@media (min-width: 755px) {
+  .solution {
+    position: relative;
+    padding: 120px 0 92px 0; }
+
+  .solution__wrap {
+    position: relative; }
+
+  .solution::before {
+    content: "";
+    position: absolute;
+    top: -24px;
+    right: 0;
+    width: 28%;
+    height: 365px;
+    background-image: url("../img/solution-bg-tablet.png");
+    background-repeat: no-repeat; }
+
+  .solution__wrap::after {
+    content: "";
+    position: absolute;
+    top: 327px;
+    right: 0;
+    width: 145px;
+    height: 19px;
+    background-image: url("../img/wave.png");
+    background-repeat: no-repeat; }
+
+  .solution__title {
+    width: 345px;
+    margin-bottom: 94px;
+    text-align: left;
+    line-height: 36px; }
+
+  .solution__title::after {
+    bottom: -29px;
+    left: -2px;
+    margin: 0; }
+
+  .solution__list {
+    display: flex;
+    text-align: left; }
+
+  .solution__item {
+    width: 220px; }
+
+  .solution__item {
+    position: relative;
+    margin-right: 29px; }
+
+  .solution__item:last-child {
+    margin-right: 0; }
+
+  .solution__subtitle {
+    margin: 0 0 14px 0;
+    font-size: 16px; }
+
+  .solution__subtitle::after {
+    margin: 0; }
+
+  .solution__text {
+    margin: 0;
+    line-height: 24px; } }
+@media (min-width: 1170px) {
+  .solution {
+    padding: 154px 0 191px 0; }
+
+  .solution::before {
+    top: -89px;
+    right: 0;
+    width: 46%;
+    height: 608px;
+    background-image: url("../img/solution-bg.png"); }
+
+  .solution__wrap::after {
+    top: 488px;
+    right: 235px; }
+
+  .solution__title {
+    width: 500px;
+    margin-bottom: 137px;
+    line-height: 54px; }
+
+  .solution__title::after {
+    bottom: -37px;
+    left: 0px; }
+
+  .solution__item {
+    width: 263px;
+    padding-left: 23px; }
+
+  .solution__subtitle {
+    margin: 0 0 12px 0;
+    font-size: 18px; }
+
+  .solution__subtitle::after {
+    left: -24px; }
+
+  .solution__text {
+    width: 100%;
+    line-height: 28px; } }
+.teachers {
+  position: relative;
+  padding: 0 0 0 0; }
+
+.teachers::before {
+  content: "";
+  position: absolute;
+  top: 240px;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 2px;
+  background-color: #e9e9e9; }
+
+.teachers__title {
+  margin-bottom: 28px;
+  font-size: 30px; }
+
+.teachers__list {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.teachers__img {
+  display: block;
+  width: 285px;
+  height: 227px; }
+
+.teachers__name {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.7px; }
+
+.teachers__description {
+  margin: 0;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.7px; }
+
+.teachers__name {
+  margin-bottom: 9px; }
+
+.teachers__img {
+  margin-bottom: 24px; }
+
+.teachers__item--1 {
+  margin-bottom: 59px; }
+
+.teachers__item--2 {
+  margin-bottom: 41px; }
+
+.teachers__img--2 {
+  margin-bottom: 22px; }
+
+@media (min-width: 755px) {
+  .teachers::before {
+    top: 230px;
+    height: 23px;
+    background-color: transparent;
+    background-image: url("../img/teachers-line.png");
+    background-repeat: no-repeat; }
+
+  .teachers::after {
+    content: "";
+    position: absolute;
+    top: 581px;
+    right: 0;
+    width: 22%;
+    height: 433px;
+    background-image: url("../img/teachers-circle.png");
+    background-repeat: no-repeat; }
+
+  .teachers__title {
+    margin-bottom: 51px;
+    text-align: left; }
+
+  .teachers__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+
+  .teachers__item {
+    width: 345px;
+    margin: 0 0 40px; }
+
+  .teachers__item:last-child {
+    margin-bottom: 0; }
+
+  .teachers__img {
+    width: 344px;
+    height: 274px;
+    margin-bottom: 31px; }
+
+  .teachers__name {
+    margin-bottom: 11px;
+    font-size: 18px; }
+
+  .teachers__description {
+    line-height: 24px; } }
+@media (min-width: 1170px) {
+  .teachers::after {
+    top: -45px;
+    right: 0;
+    z-index: -1;
+    width: 36%;
+    height: 433px;
+    background-image: url("../img/teachers-circle-turn.png");
+    background-repeat: no-repeat; }
+
+  .teachers::before {
+    top: 256px;
+    width: 70%; }
+
+  .teachers__title {
+    font-size: 45px; }
+
+  .teachers__item {
+    width: 360px; }
+
+  .teachers__img {
+    width: 360px;
+    height: 286px;
+    margin-bottom: 28px; }
+
+  .teachers__name {
+    margin-bottom: 10px; } }
